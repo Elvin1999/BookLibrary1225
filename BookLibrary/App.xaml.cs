@@ -18,10 +18,12 @@ namespace BookLibrary
         public static Grid MyGrid { get; set; }
         public static UIElement BackPage { get; set; }
         public static BookRepository BookRepo;
+        public static StudentRepository StudentRepo;
 
         public App()
         {
             BookRepo = new BookRepository();
+            StudentRepo = new StudentRepository();
         }
     }
 }

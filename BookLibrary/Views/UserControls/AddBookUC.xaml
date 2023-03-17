@@ -9,17 +9,18 @@
     <Grid Background="{StaticResource secondColor}">
         <StackPanel Margin="0,10,0,0" Width="450">
             <Label FontSize="26" Foreground="{StaticResource mainColor}">Title</Label>
-            <TextBox FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
+            <TextBox Text="{Binding Book.Title,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
             <Label FontSize="26" Foreground="{StaticResource mainColor}">Price</Label>
-            <TextBox FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
+            <TextBox Text="{Binding Book.Price,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
             <Label FontSize="26" Foreground="{StaticResource mainColor}">Discount</Label>
-            <TextBox FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
+            <TextBox Text="{Binding Book.Discount,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
             <Label FontSize="26" Foreground="{StaticResource mainColor}">Page</Label>
-            <TextBox FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
+            <TextBox Text="{Binding Book.Page,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
             <Label FontSize="26" Foreground="{StaticResource mainColor}">Book Count</Label>
-            <TextBox FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
+            <TextBox Text="{Binding Book.BookCount,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" FontSize="26" Foreground="{StaticResource mainColor}" ></TextBox>
             <Button Margin="0,10,0,0" Style="{StaticResource MyButtonStyle}"
                     Foreground="{StaticResource mainColor}" Content="Add New Book"
+                    Command="{Binding AddBookCommand}"
                     FontSize="26"
                     ></Button>
         </StackPanel>

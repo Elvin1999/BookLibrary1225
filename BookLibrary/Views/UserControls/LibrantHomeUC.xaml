@@ -20,11 +20,11 @@
                     Foreground="{StaticResource mainColor}" Style="{StaticResource MyButtonStyle}">
                 Show All Rents
             </Button>
-            <Button Command="{Binding ShowAllBooksCommand}" FontSize="30" FontWeight="ExtraBlack"
+            <Button Command="{Binding RegisterStudentCommand}" FontSize="30" FontWeight="ExtraBlack"
                     Foreground="{StaticResource mainColor}" Style="{StaticResource MyButtonStyle}">
                 Register Student
             </Button>
-            <Button Command="{Binding ShowAllBooksCommand}" FontSize="30" FontWeight="ExtraBlack"
+            <Button Command="{Binding RentBookCommand}" FontSize="30" FontWeight="ExtraBlack"
                     Foreground="{StaticResource mainColor}" Style="{StaticResource MyButtonStyle}">
                 Rent Book
             </Button>
